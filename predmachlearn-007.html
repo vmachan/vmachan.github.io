@@ -75,7 +75,6 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h3>Now fit a model using random forests to the training partition</h3>
 <p>We use the training set to build a random forest model. We then evaluate using the corresponding test set. We repeat this for several iterations.</p>
 <p>We chose random forests as this is an ensemble learning method used for classification and regression. Many samples are selected in the process and a measure of variable importance can be obtained. Also this is appropriate when working with an extremely high number of candidate variables that need to be reduced as in our case with the already reduced set of 58. We do a 7 fold cross validation using the caret libraries train control parameters.</p>
-<pre><code>## Loading required namespace: e1071</code></pre>
 </div>
 <div id="random-forests-model-summary" class="section level3">
 <h3>Random forests model summary</h3>
