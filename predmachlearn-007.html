@@ -79,8 +79,8 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 <div id="random-forests-model-summary" class="section level3">
 <h3>Random forests model summary</h3>
-<p>The fitted model has an accuracy of 0.961 or 96.1% which was obtained by trying 28 variables (mtry) at each point of classification in the algorithm.</p>
-<p>The final model shows that we have an out-of-sample/bag error rate of 3.41%. The confusion matrix in addition shows that we have a reasonably low values for the classes.error.</p>
+<p>The fitted model has an accuracy of 1.0 or very close to 100% which was obtained by trying 28 variables (mtry) at each point of classification in the algorithm.</p>
+<p>The final model shows that we have an estimated out-of-sample/bag error rate of 3.26%. The confusion matrix in addition shows that we have a reasonably low values for the classes.error.</p>
 <pre class="r"><code>modRF</code></pre>
 <pre><code>## Random Forest 
 ## 
@@ -123,14 +123,12 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="what-does-this-tell-us" class="section level2">
 <h2>What does this tell us?</h2>
 <p>Our goal is to predict how well a person performs an exercise given the sensor values that we monitor.</p>
-<p>After predicting the values we then compute the percentage accuracy. We see that the model prediction is accurate ~96% of the time. The plot A in appendix shows the error rate when classifying each of the different classe’s.</p>
 <pre><code>## [1] 96.33</code></pre>
+<p>After predicting the values we then compute the percentage accuracy. We see that the model prediction is accurate 96.3305% of the time. The plot A in appendix shows the error rate when classifying each of the different classe’s.</p>
 </div>
 <div id="predict-the-values-for-the-real-test-data-set" class="section level2">
 <h2>Predict the values for the real test data set</h2>
-<p>Now we use the real test data of 20 and predict the classe values for these using the fitted random forest model that we have built</p>
-<pre><code>##  [1] &quot;B&quot; &quot;A&quot; &quot;B&quot; &quot;A&quot; &quot;A&quot; &quot;E&quot; &quot;D&quot; &quot;B&quot; &quot;A&quot; &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;B&quot; &quot;A&quot; &quot;E&quot; &quot;E&quot; &quot;A&quot;
-## [18] &quot;B&quot; &quot;A&quot; &quot;B&quot;</code></pre>
+<p>We then use the real test data of 20 and predict the classe values for these using the fitted random forest model that we have built. These are then uploaded to the submission site. The results are not displayed here.</p>
 <p></p>
 </div>
 <div id="appendix" class="section level1">
